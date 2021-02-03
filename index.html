@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/front-end/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <header class="header">
             <nav class="nav">
                 <a href="/" class="nav__link" data-link>Home</a>
@@ -17,17 +17,18 @@
         <div class="view">
             <form action="" class="movie-form">
                 <h3>Search for a film: </h3>
-                <div class="movie-results"></div>
+                <div class="movie-results" id="result-container"></div>
                 <div class="input-container">
                     <input type="text" id="search-input" placeholder="Enter a movie...">
-                    <button type="submit" class="search">Search</button>
+                    <button type="submit" class="search" id="search-button">Search</button>
                 </div>
             </form>
         </div>
         <footer class="footer">
+            
 
         </footer>
     </div>
-<script type="module" src="/js/app.js"></script>
+<script type="module" src="/front-end/app.js"></script>
 </body>
 </html>

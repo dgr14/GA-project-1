@@ -77,6 +77,7 @@ body > div.container > div.view > form.movie-form > div.movie-results {
     height: 70%;
     width: 95%;
     border: 2px solid black;
+    overflow-y: auto;
 }
 /* div that holds the input and submit button */
 body > div.container > div.view > form.movie-form > div.input-container {
@@ -89,12 +90,31 @@ body > div.container > div.view > form.movie-form > div.input-container {
 body > div.container > div.view > form.movie-form > div.input-container > input {
     height: 100%;
     width: 60%;
-    
 }
 body > div.container > div.view > form.movie-form > div.input-container > button {
     height: 100%;
     width: 30%;
 }
+/* DOM APPENDED ELEMENT STYLING */
+.returned-results{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.ratings-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5pt;
+}
+.result{
+    padding: 5pt;
+    display: block;
+}
+
 /* Spacing between h3 and input elements on form */
 /* body > div.container > div.view > form.movie-form > h3, div.input-container > input {
     margin: 15pt 0;
@@ -165,6 +185,15 @@ body > div.container > footer.footer {
     }
     body > div.container > div.view > form.movie-form > div.input-container > button.search {
         width: 20%;
+    }
+
+    /* DOM appended elements */
+    #result-title{
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .result{
+        font-size: 20px;
     }
 
 
