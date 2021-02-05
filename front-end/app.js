@@ -9,7 +9,7 @@ localStorage.setItem('favoriteMovieArr', [])
 const consoleValue = value => {
     const searchValue = document.getElementById('search-input').value
     console.log(searchValue)
-    fetch(`http://www.omdbapi.com/?apikey=ca9a8849&t=${searchValue}`)
+    fetch(`https://www.omdbapi.com/?apikey=ca9a8849&t=${searchValue}`)
 .then((responseData) => {
     console.log(responseData)
     return responseData.json()
