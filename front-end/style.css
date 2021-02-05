@@ -140,13 +140,14 @@ body > div.container > div.view > form.movie-form > div.input-container > button
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    
+
 }
 
 /* STYLING FOR AUTOCOMPLETE */
 .autocomplete {
     /*the container must be positioned relative:*/
     position: relative;
+    
     display: inline-block;
   }
 input {
